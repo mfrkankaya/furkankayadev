@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* color: #323232; */
+  color: #10151f;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f5f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+  /* color: #10151f; */
+  margin: 0;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  transform: scaleY(1.2);
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 3rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.center {
+  margin: auto;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.ml-sm {
+  margin-left: 0.5rem;
+}
+
+.ml-xs {
+  margin-left: 0.25rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.secondary-text {
+  color: #8892a5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20rem auto;
+  padding-top: 4rem;
+}
+
+.grid > div {
+  padding: 1rem;
+}
+
+section {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.section-left .material-icons {
+  font-size: 28px;
+  padding-right: 1rem;
+}
+
+.content-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.content-item::before {
+  content: '';
+  position: absolute;
+  left: -2.15rem;
+  top: 0.45rem;
+  width: 4px;
+  height: 4px;
+  background-color: #f2f5f5;
+  border: 2px solid #10151f;
+  border-radius: 12rem;
+}
+
+section h3 {
+  margin-bottom: 1rem;
+}
+section p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.content-title {
+  font-weight: bold;
+}
+
+.content-date {
+  color: #8892a5;
+  margin-top: 0.25rem;
+}
+
+aside{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+aside section {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+aside section .title {
+  position: relative;
+  width: fit-content;
+}
+
+aside section .title::before,
+aside section .title::after {
+  content: '';
+  position: absolute;
+  top: 0.6rem;
+  width: 4px;
+  height: 4px;
+  background-color: #f2f5f5;
+  border: 2px solid #10151f;
+  border-radius: 12rem;
+}
+
+aside section .title::before {
+  left: -1.5rem;
+}
+
+aside section .title::after {
+  right: -1.5rem;
+}
+
+
+.personal-details div{
+  margin: 0.25rem 0;
+}
+
+.skills div{
+  margin: 0.5rem 0;
+}
+
+.hobbies div{
+  margin: 0.25rem 0;
+}
